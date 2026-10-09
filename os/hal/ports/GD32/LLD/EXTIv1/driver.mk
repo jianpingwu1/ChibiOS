@@ -1,0 +1,2 @@
+PLATFORMSRC += $(CHIBIOS)/os/hal/ports/GD32/LLD/EXTIv1/gd32_exti.c
+PLATFORMINC += $(CHIBIOS)/os/hal/ports/GD32/LLD/EXTIv1
