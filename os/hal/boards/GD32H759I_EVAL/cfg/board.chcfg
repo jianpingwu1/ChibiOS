@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    GD32H73x_75x board description, consumed by tools/gd32/boardgen.py to
+    generate board.h, board.c and board.mk.
+
+    Pin attributes and their accepted values, all of them optional:
+
+      ID        pin identifier, empty means the generic PIN<n> name
+      Mode      Input (default) | Output | Alternate | Analog
+      Type      PushPull (default) | OpenDrain
+      Speed     Minimum (default) | Low | High | Maximum
+      Resistor  Floating (default) | PullUp | PullDown
+      Level     Low (default) | High
+      Alternate 0 (default) .. 15
+
+    Pins left as <pinN /> take every default, which is a floating input.
+    All sixteen pins of a declared port must be listed.
+-->
+<board>
+  <configuration_settings>
+    <output_path>..</output_path>
+  </configuration_settings>
+  <board_name>GD32H73x_75x Minimal Template</board_name>
+  <board_id>GD32_H73X_75X_MINIMAL</board_id>
+  <!-- Must match one of the case-sensitive macros checked by
+       gd32h73x_75x.h (GD32H73X_75X or GD32H75E). -->
+  <subtype>GD32H73X_75X</subtype>
+  <!-- 25MHz crystal, as used by the vendor system_clock_600m_hxtal()
+       reference configuration. -->
+  <clocks HXTALFrequency="25000000" />
+  <ports>
+    <GPIOA>
+      <pin0 />
+      <pin1 />
+      <pin2 />
+      <pin3 />
+      <pin4 />
+      <pin5 />
+      <pin6  ID="LED2"  Mode="Output"    Type="PushPull" Level="Low" />
+      <pin7 />
+      <pin8 />
+      <pin9 />
+      <pin10 />
+      <pin11 />
+      <pin12 />
+      <pin13 ID="SWDIO" Mode="Alternate" Alternate="0" Speed="Maximum" />
+      <pin14 ID="SWCLK" Mode="Alternate" Alternate="0" Speed="Maximum" />
+      <pin15 />
+    </GPIOA>
+    <GPIOB>
+      <pin0 />
+      <pin1 />
+      <pin2 />
+      <pin3 />
+      <pin4 />
+      <pin5 />
+      <pin6 />
+      <pin7 />
+      <pin8 />
+      <pin9 />
+      <pin10 />
+      <pin11 />
+      <pin12 />
+      <pin13 />
+      <pin14 />
+      <pin15 />
+    </GPIOB>
+    <GPIOC>
+      <pin0 />
+      <pin1 />
+      <pin2 />
+      <pin3 />
+      <pin4 />
+      <pin5 />
+      <pin6 />
+      <pin7 />
+      <pin8 />
+      <pin9 />
+      <pin10 />
+      <pin11 />
+      <pin12 />
+      <pin13 />
+      <pin14 />
+      <pin15 />
+    </GPIOC>
+    <GPIOD>
+      <pin0 />
+      <pin1 />
+      <pin2 />
+      <pin3 />
+      <pin4 />
+      <pin5 />
+      <pin6 />
+      <pin7 />
+      <pin8 />
+      <pin9 />
+      <pin10 />
+      <pin11 />
+      <pin12 />
+      <pin13 />
+      <pin14 />
+      <pin15 />
+    </GPIOD>
+    <GPIOE>
+      <pin0 />
+      <pin1 />
+      <pin2 />
+      <pin3 />
+      <pin4 />
+      <pin5 />
+      <pin6 />
+      <pin7 />
+      <pin8 />
+      <pin9 />
+      <pin10 />
+      <pin11 />
+      <pin12 />
+      <pin13 />
+      <pin14 />
+      <pin15 />
+    </GPIOE>
+    <GPIOF>
+      <pin0 />
+      <pin1 />
+      <pin2 />
+      <pin3 />
+      <pin4 />
+      <pin5 />
+      <pin6 />
+      <pin7 />
+      <pin8 />
+      <pin9 />
+      <pin10 ID="LED1" Mode="Output" Type="PushPull" Level="Low" />
+      <pin11 />
+      <pin12 />
+      <pin13 />
+      <pin14 />
+      <pin15 />
+    </GPIOF>
+    <GPIOG>
+      <pin0 />
+      <pin1 />
+      <pin2 />
+      <pin3 />
+      <pin4 />
+      <pin5 />
+      <pin6 />
+      <pin7 />
+      <pin8 />
+      <pin9 />
+      <pin10 />
+      <pin11 />
+      <pin12 />
+      <pin13 />
+      <pin14 />
+      <pin15 />
+    </GPIOG>
+    <GPIOH>
+      <pin0 />
+      <pin1 />
+      <pin2 />
+      <pin3 />
+      <pin4 />
+      <pin5 />
+      <pin6 />
+      <pin7 />
+      <pin8 />
+      <pin9 />
+      <pin10 />
+      <pin11 />
+      <pin12 />
+      <pin13 />
+      <pin14 />
+      <pin15 />
+    </GPIOH>
+    <!-- GPIOI does not exist on GD32H73x_75x, see gd32_registry.h. -->
+    <GPIOJ>
+      <pin0 />
+      <pin1 />
+      <pin2 />
+      <pin3 />
+      <pin4 />
+      <pin5 />
+      <pin6 />
+      <pin7 />
+      <pin8 />
+      <pin9 />
+      <pin10 />
+      <pin11 />
+      <pin12 />
+      <pin13 />
+      <pin14 />
+      <pin15 />
+    </GPIOJ>
+    <GPIOK>
+      <pin0 />
+      <pin1 />
+      <pin2 />
+      <pin3 />
+      <pin4 />
+      <pin5 />
+      <pin6 />
+      <pin7 />
+      <pin8 />
+      <pin9 />
+      <pin10 />
+      <pin11 />
+      <pin12 />
+      <pin13 />
+      <pin14 />
+      <pin15 />
+    </GPIOK>
+  </ports>
+</board>
